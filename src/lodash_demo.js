@@ -97,3 +97,10 @@ var nums = [6, 4];
 var arr = lodash.map(users, el => el.length) // [6 ,4]
 var arr = lodash.map(nums, el => el * el) // [36 ,16]
 console.info(arr);
+
+// Array find.
+var resAry = [{id:1,val:11},{id:2,val:22}];
+var res = resAry.find((item)=>{
+return item.id === 2;
+}).val;
+res;

@@ -1,5 +1,5 @@
 /**
- * ES6- async函数就是将 Generator 函数的星号（*）替换成async，将yield替换成await，仅此而已
+ * ES6-语法 async函数就是将 Generator 函数的星号（*）替换成async，将yield替换成await，仅此而已
  * 
  * async函数对 Generator 函数的改进，体现在以下四点：
  *      1: 内置执行器。Generator 函数的执行必须靠执行器，所以才有了co模块，而async函数自带执行器。也就是说，async函数的执行，与普通函数一模一样，只要一行
