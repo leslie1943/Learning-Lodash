@@ -104,3 +104,11 @@ var res = resAry.find((item)=>{
 return item.id === 2;
 }).val;
 res;
+
+let a = [1,2,3];
+let b = [0,...a,4];
+console.info(b);
+
+let obj = { a: 1, b: 2 }; 
+let obj2 = {...obj, c:3,d:4}
+console.info(obj2);
