@@ -112,3 +112,34 @@ console.info(b);
 let obj = { a: 1, b: 2 }; 
 let obj2 = {...obj, c:3,d:4}
 console.info(obj2);
+
+let sysData = [
+    {id: '总报价',params: ``}, 
+    // 笔记本电脑
+    {id: '笔记本电脑',params: `品牌、规格型号:苹果air联想Lenove G470戴尔 D10`}, 
+    {id: '笔记本电脑',params: `技术参数及设置要求:1T硬盘8M内存s`}, 
+    {id: '笔记本电脑',params: `售后服务要求:三年保修7*24小时电话支持`},
+    {id: '笔记本电脑',params: '实名证件-身份证'}, 
+    {id: '笔记本电脑',params: '厂商证件 - 医疗器械生产许可证'},
+    {id: '笔记本电脑',params: '代理商证件-医疗器械产品注册证'},
+    {id: '笔记本电脑',params: '供应商报价'}, 
+    {id: '笔记本电脑',params: '报价备注'},
+    //鼠标
+    {id: '鼠标',params: `品牌、规格型号:苹果air联想Lenove G470戴尔 D10`}, 
+    {id: '鼠标',params: `技术参数及设置要求:1T硬盘8M内存s`}, 
+    {id: '鼠标',params: `售后服务要求:三年保修7*24小时电话支持` },
+    {id: '鼠标',params: '实名证件-身份证'}, 
+    {id: '鼠标',params: '厂商证件 - 医疗器械生产许可证'},
+    // {id: '鼠标',params: '代理商证件-医疗器械产品注册证' },
+    {id: '鼠标',params: '供应商报价'}, 
+    {id: '鼠标',params: '报价备注'},
+    //证件
+    {id:"供应商证件",params:"实名证件-营业执照"},
+    {id:"供应商证件",params:"厂商证件-生产许可证"},
+    {id:"供应商证件",params:"代理商证件-资格证"},
+    {id:"供应商证件",params:"产品-税务登记证"},
+];
+let index = lodash.findIndex(sysData, {id:"笔记本电脑"});
+let groupMap = lodash.countBy(sysData, "笔记本电脑");
+console.info("index:" + index);
+console.info("groupMap:" + groupMap);
