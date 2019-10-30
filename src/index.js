@@ -9,8 +9,8 @@ var lodash = require('lodash');
 console.info('[lodash...] - orderBy');
 var fs = require('fs');
 // console.info(fs);
-fs.readdir('./avatars',function(err,files){
-    if(err){
+fs.readdir('./avatars', function (err, files) {
+    if (err) {
         throw err;
     }
     console.info(files);
